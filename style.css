@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #eeeeee;
+  font-family: Arial, sans-serif;
+}
+
+.site-layout {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  min-height: 48px;
+  padding: 4px 0;
+  border-bottom: 3px solid #e60012;
+}
+
+.navbar-brand {
+  font-size: 18px;
+}
+
+.nav-link {
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  color: #ffcc00;
+}
+
+/* Main Banner */
+
+.banner {
+  height: 220px;
+  overflow: hidden;
+  background-color: #111111;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Colorful Navigation Buttons */
+
+.smash-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: 4px solid #222222;
+}
+
+.smash-button:hover {
+  color: white;
+  opacity: 0.85;
+}
+
+.button-symbol {
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.about-button {
+  background-color: #e60012;
+}
+
+.fighters-button {
+  background-color: #009944;
+}
+
+.stages-button {
+  background-color: #f5a500;
+}
+
+.items-button {
+  background-color: #c4b900;
+}
+
+.music-button {
+  background-color: #008b8b;
+}
+
+/* About Section */
+
+.about-section {
+  padding: 12px 15px;
+  background-color: white;
+}
+
+.about-section h2 {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.about-section p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* Section Headings */
+
+.section-title {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* Fighters Section */
+
+.fighters-section {
+  background-color: #222222;
+  padding: 15px 0;
+}
+
+.fighter-card {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 5px;
+}
+
+.fighter-card img {
+  width: 100%;
+  height: 165px;
+  object-fit: contain;
+}
+
+.fighter-card h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* Bottom Content */
+
+.bottom-content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.content-panel {
+  background-color: white;
+  padding: 12px;
+  height: 100%;
+  border-top: 4px solid #e60012;
+  text-align: center;
+}
+
+.content-panel p {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 6px 0 0;
+}
+
+/* Stages */
+
+.stage-image {
+  width: 100%;
+  height: 105px;
+  object-fit: cover;
+}
+
+/* Items */
+
+.item-image {
+  width: 100%;
+  height: 105px;
+  object-fit: contain;
+}
+
+/* Music */
+
+.music-panel {
+  border-top-color: #008b8b;
+}
+
+.music-list {
+  text-align: left;
+  padding: 5px;
+}
+
+.music-list p {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+/* Footer */
+
+footer {
+  padding: 8px 10px;
+  font-size: 12px;
+  border-top: 3px solid #e60012;
+}
+
+/* Social Media Buttons */
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-buttons .btn {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 14px;
+  border-radius: 4px;
+}
+
+.facebook-button {
+  background-color: #1877f2;
+  border-color: #1877f2;
+}
+
+.facebook-button:hover {
+  background-color: #145dbf;
+  border-color: #145dbf;
+}
+
+.x-button {
+  background-color: #000000;
+  border: 1px solid white;
+}
+
+.x-button:hover {
+  background-color: #333333;
+  border-color: white;
+}
+
+/* Mobile Layout */
+
+@media (max-width: 767px) {
+  .banner {
+    height: 160px;
+  }
+
+  .smash-button {
+    height: 60px;
+    font-size: 11px;
+  }
+
+  .fighter-card img {
+    height: 110px;
+  }
+
+  .fighter-card h5 {
+    font-size: 12px;
+  }
+
+  .stage-image,
+  .item-image {
+    height: 85px;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  .navbar-brand {
+    font-size: 14px;
+  }
+}
